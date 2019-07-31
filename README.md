@@ -1,6 +1,6 @@
 ## SICLA - SIstema Concertativo
-Sicla è un sistema concertativo nato per la concertazione di limiti comunali tra più enti all'interno di una determinata area.
-Nel 2019 si è evoluto diventando un sistema concertativo tematico.
+Sicla è un sistema concertativo nato per la concertazione di limiti territoriali tra più enti all'interno di una determinata area.
+Nel 2019 si è evoluto diventando un sistema concertativo tematico con facoltà di parametrizzazione.
 ## Tech/framework utilizzati
 - [Ext JS](https://www.sencha.com/products/extjs/)
 - [CakePHP](https://cakephp.org/)
@@ -13,18 +13,21 @@ Nel 2019 si è evoluto diventando un sistema concertativo tematico.
   - pdo_pgsql
   - zip
   - zlib
-- Database Postgres con codifica **UTF-8** e Postgis **2.x**
+- Database Postgres **9.x**(consigliata 9.5) con codifica **UTF-8** e Postgis **2.x**
+- Server di posta
 - Almeno un baselayer (Es: OpenStreetMap)
 - Tematismi WMS da esporre in mappa
 ## Installazione
-- Scaricare la cartella del progetto e posizionarla nella document root del web server
-- Se non è presente, creare un collegamento alla cartella temporanea del web server all'interno della document root
+- Scaricare la cartella del progetto e posizionarla nella document root del web server;
+- Restaurare il file dump.sql all'interno di un database vuoto;
+- Se non è presente, creare un collegamento alla cartella temporanea del web server all'interno della document root;
 - Assicurarsi che le cartelle 'attachments', 'Config', 'tmp', 'webroot' abbiano tutti i permessi necessari
   - Linux:
     Accedere alla shell e navigare fino alla cartella dell'applicativo, quindi eseguire qeusto comando:
     ```
     sudo chmod -R 777 [nome_cartella]
     ```
+- Aprire il file *database.php* all'interno della cartella Config e configurare la connessione al DB
 ## Utilizzo
 1. Accedere all'applicativo tramite l'url del server / sicla:
     ```
@@ -48,8 +51,7 @@ Nel 2019 si è evoluto diventando un sistema concertativo tematico.
      - Tutti gli utenti comuni hanno la possibilità di inserire nuove osservazioni tramite l'apposito pulsante in alto a destra.
      - Se viene richiesto il parere di un altro comune durante l'inserimento dell'osservazione, è compito dell'utente associato ad esso         di rispondere all'osservazione tramite l'icona della matita accanto all'osservazione in cui è stato richiesto il suo parere.
    - **Sia utenti che enti/comuni devono essere associati ai progetti di cui faranno parte, questo è possibile tramite la loro relativa         scheda nel pannello di amministrazione**
-4. Dopo preso mano con l'applicativo, accedere al pannello di amministrazione dei progetti e creare il primo vero progetto. Un        progetto per essere funzionale ha bisogno di tutti i campi obbligatori delle sue impostazioni, oltre ad almeno un baselayer inserito.
+4. Dopo preso mano con l'applicativo, accedere al pannello di amministrazione dei progetti e creare il primo vero progetto. Un           progetto per essere funzionale ha bisogno di tutti i campi obbligatori delle sue impostazioni, oltre ad almeno un baselayer inserito.
    Si può accedere alle impostazioni del progetto appena creato tramite l'apposito pulsante sulla griglia dei progetti;
-   
 5. Configurato il progetto, va reso attivo, modificandolo dalla griglia;
 6. Associare gli utenti e gli enti/comuni desiderati al nuovo progetto.
