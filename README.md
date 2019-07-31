@@ -6,7 +6,7 @@ Nel 2019 si è evoluto diventando un sistema concertativo tematico.
 - [CakePHP](https://cakephp.org/)
 ## Prerequisiti
 - PHP **5.x**
-- Apache **2.x** con queste estensionI:
+- Apache **2.x** con queste estensioni:
   - initl
   - mbstring
   - libxml
