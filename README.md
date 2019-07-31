@@ -5,7 +5,7 @@ Nel 2019 si è evoluto diventando un sistema concertativo tematico con facoltà 
 - [Ext JS](https://www.sencha.com/products/extjs/)
 - [CakePHP](https://cakephp.org/)
 ## Prerequisiti
-- PHP **5.x**
+- PHP **5.6.x**
 - Apache **2.x** con queste estensioni:
   - initl
   - mbstring
