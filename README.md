@@ -20,16 +20,16 @@ Nel 2019 si è evoluto diventando un sistema concertativo tematico.
     sudo chmod -R 777 [nome_cartella]
     ```
 ## Utilizzo
-1. Accedere all'applicativo tramite l'url del server / sicla;
+1. Accedere all'applicativo tramite l'url del server / sicla:
     ```
     http://www.example.com/sicla
     ```
-2. Effettuare il login; 
+2. Effettuare il login: 
    - Username : sicla
    - Password : sicla2019
 3. Selezionare l'unico progetto esistente e premere 'carica', si verrà reindirizzati alla home dell'applicativo;
-   *Il progetto già esistente non è altro che un esempio, da usare per prendere mano con le varie impostazioni.
-   *l'utente con cui si ha effettuato il login appartiene al gruppo Admin,gli utenti si dividono in due categorie: Admin e Comuni:*
+   *Il progetto già esistente non è altro che un esempio, da usare per prendere mano con le varie impostazioni.*
+   *l'utente con cui si ha effettuato il login appartiene al gruppo Admin,gli utenti si dividono in  Admin e Comuni:*
    - **Admin**
      - Gli utenti Admin hanno accesso al pannello di amministrazione, raggiungibile tramite il primo pulsante in basso a destra.
      - Da questo pannello è possibile gestire gli utenti, i vari comuni/enti, le impostazioni generali e i progetti.
