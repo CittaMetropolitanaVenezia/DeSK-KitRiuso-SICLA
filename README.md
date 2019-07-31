@@ -6,7 +6,13 @@ Nel 2019 si è evoluto diventando un sistema concertativo tematico.
 - [CakePHP](https://cakephp.org/)
 ## Prerequisiti
 - PHP **5.x**
-- Apache **2.x** con estensioni **initl,mbstring,libxml,pdo_pgsql,zip,zlib** attive
+- Apache **2.x** con queste estensionI:
+  - initl
+  - mbstring
+  - libxml
+  - pdo_pgsql
+  - zip
+  - zlib
 - Database Postgres con codifica **UTF-8** e Postgis **2.x**
 - Almeno un baselayer (Es: OpenStreetMap)
 - Tematismi WMS da esporre in mappa
