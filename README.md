@@ -18,16 +18,17 @@ Nel 2019 si è evoluto diventando un sistema concertativo tematico con facoltà 
 - Almeno un baselayer (Es: OpenStreetMap)
 - Tematismi WMS da esporre in mappa
 ## Installazione
-- Scaricare la cartella del progetto e posizionarla nella document root del web server;
-- Restaurare il file dump.sql all'interno di un database vuoto;
-- Se non è presente, creare un collegamento alla cartella temporanea del web server all'interno della document root;
-- Assicurarsi che le cartelle 'attachments', 'Config', 'tmp', 'webroot' abbiano tutti i permessi necessari
+1. Scaricare la cartella del progetto e posizionarla nella document root del web server;
+2. Restaurare il file dump.sql all'interno di un database vuoto;
+3. Se non è presente, creare un collegamento alla cartella temporanea del web server all'interno della document root;
+4. Assicurarsi che le cartelle 'attachments', 'Config', 'tmp', 'webroot' abbiano tutti i permessi necessari
   - Linux:
     Accedere alla shell e navigare fino alla cartella dell'applicativo, quindi eseguire qeusto comando:
     ```
     sudo chmod -R 777 [nome_cartella]
     ```
-- Aprire il file *database.php* all'interno della cartella Config e configurare la connessione al DB
+5. Aprire il file *database.php* all'interno della cartella Config e configurare la connessione al DB
+6. Popolare la tabella 'towns' del DB con i dati delle città desiderate.
 ## Utilizzo
 1. Accedere all'applicativo tramite l'url del server / sicla:
     ```
@@ -54,4 +55,7 @@ Nel 2019 si è evoluto diventando un sistema concertativo tematico con facoltà 
 4. Dopo preso mano con l'applicativo, accedere al pannello di amministrazione dei progetti e creare il primo vero progetto. Un           progetto per essere funzionale ha bisogno di tutti i campi obbligatori delle sue impostazioni, oltre ad almeno un baselayer inserito.
    Si può accedere alle impostazioni del progetto appena creato tramite l'apposito pulsante sulla griglia dei progetti;
 5. Configurato il progetto, va reso attivo, modificandolo dalla griglia;
-6. Associare gli utenti e gli enti/comuni desiderati al nuovo progetto.
+6. Creare i vari utenti(almeno un admin) e enti desiderati;
+7. Associare i nuovi utenti e enti, oltre ai comuni caricati, al nuovo progetto;
+8. Eseguire il login da utente Admin del nuovo progetto, caricarlo e, se desiderato, cancellare il progetto di esempio.
+9. Eliminare i dati di esempio all'interno della tabella 'towns'
