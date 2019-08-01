@@ -34,6 +34,12 @@ Nel 2019 si è evoluto diventando un sistema concertativo tematico con facoltà 
     ```
     http://www.example.com/sicla
     ```
+  1.1 Aprire il file *core.php* all'interno della cartella Config e cambiare il valore del debug da 0 a 2
+    ```
+    Configure::write('debug', 0);
+    ```  
+  1.2 Aggiornare la pagina
+  1.3 Settare di nuovo il valore del debug a 0 ed aggiornare di nuovo la pagina
 2. Effettuare il login: 
    - Username : sicla
    - Password : sicla2019
