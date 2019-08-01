@@ -54,7 +54,7 @@ class DATABASE_CONFIG {
         'host' => 'localhost',
         'login' => 'postgres',
         'password' => 'postgres',
-        'database' => 'geodbt_sicla_milano',
+        'database' => 'database',
         'prefix' => '',
         'encoding' => 'utf8'
     );
