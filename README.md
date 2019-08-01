@@ -41,9 +41,11 @@ Nel 2019 si è evoluto diventando un sistema concertativo tematico con facoltà 
 1.2 Aggiornare la pagina;
 
 1.3 Settare di nuovo il valore del debug a 0 ed aggiornare di nuovo la pagina;
+
 2. Effettuare il login: 
    - Username : sicla
    - Password : sicla2019
+   
 3. Selezionare l'unico progetto esistente e premere 'carica', si verrà reindirizzati alla home dell'applicativo;
    *Il progetto già esistente non è altro che un esempio, da usare per prendere mano con le varie impostazioni.*
    *l'utente con cui si ha effettuato il login appartiene al gruppo Admin,gli utenti si dividono in  Admin e Comuni:*
@@ -59,9 +61,14 @@ Nel 2019 si è evoluto diventando un sistema concertativo tematico con facoltà 
      - Tutti gli utenti comuni hanno la possibilità di inserire nuove osservazioni tramite l'apposito pulsante in alto a destra.
      - Se viene richiesto il parere di un altro comune durante l'inserimento dell'osservazione, è compito dell'utente associato ad esso         di rispondere all'osservazione tramite l'icona della matita accanto all'osservazione in cui è stato richiesto il suo parere.
    - **Sia utenti che enti/comuni devono essere associati ai progetti di cui faranno parte, questo è possibile tramite la loro relativa         scheda nel pannello di amministrazione**
+   
 4. Dopo preso mano con l'applicativo, accedere al pannello di amministrazione dei progetti e creare il primo vero progetto. Un           progetto per essere funzionale ha bisogno di tutti i campi obbligatori delle sue impostazioni, oltre ad almeno un baselayer inserito.
    Si può accedere alle impostazioni del progetto appena creato tramite l'apposito pulsante sulla griglia dei progetti;
+   
 5. Configurato il progetto, va reso attivo, modificandolo dalla griglia;
+
 6. Creare ed associare i vari  enti caricati/creati e l'utente di esempio al nuovo progetto;
+
 7. Eseguire il login con lo stesso utente al nuovo progetto, caricarlo e, se desiderato, cancellare il progetto di esempio;
+
 8. Eliminare i dati di esempio all'interno della tabella 'towns'
