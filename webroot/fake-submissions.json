@@ -1,0 +1,34 @@
+var submissions = { "type": "FeatureCollection",
+    "features": [
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [45.50899355954858, 8.987503051757812]
+            },
+            "properties": {
+                "prop0": "value0"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [45.368307974372875, 9.125518798828125]
+            },
+            "properties": {
+                "prop0": "value0"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [45.54026282479539, 9.259414672851562]
+            },
+            "properties": {
+                "prop0": "value0"
+            }q
+        }
+    ]
+};

@@ -1,0 +1,183 @@
+// $base-color: #FFA800 !default;
+$base-color: #FFB310 !default;
+
+@font-face {
+  font-family: 'FontAwesome';
+  src: url('fonts/fontawesome/fontawesome-webfont.eot');
+  src: url('fonts/fontawesome/fontawesome-webpfont.eot?#iefix') format('embedded-opentype'),
+  url('fonts/fontawesome/fontawesome-webfont.woff') format('woff'),
+  url('fonts/fontawesome/fontawesome-webfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Icomoon';
+  src: url('fonts/icomoon/icomoon.eot');
+  src: url('fonts/icomoon/icomoon.eot?#iefix') format('embedded-opentype'),
+  url('fonts/icomoon/icomoon.woff') format('woff'),
+  url('fonts/icomoon/icomoon.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+// generici
+a { text-decoration: none; color: gray; }
+
+// loading mask
+.sio-mask {z-index: 200000; background-color: white; opacity: 1.0; }
+.sio-mask-msg { height: 85px; width: 85px; z-index: 300001; left: 45%; top: 40%; background: url(loading/main.gif) no-repeat transparent center  !important;}
+.sio-mask-msg div { background-color: transparent; background-position: 5px 100px; padding: 0px 10px 10px 26px; margin: 0; }
+
+// configurazione pulsanti e tools dei panels
+$button-toolbar-border-color-pressed: #ffffff;
+$button-toolbar-glyph-opacity: 1.0;
+$button-default-glyph-opacity: 1.0;
+$button-toolbar-glyph-color: $base-color;
+$panel-header-glyph-opacity: 1.0;
+$tool-opacity: 1.0;
+.btn-red .x-btn-glyph, .btn-red .x-btn-inner {
+  color: #ff0000 !important;
+}
+.btn-black .x-btn-glyph, .btn-black .x-btn-inner {
+  color: #000000 !important;
+}
+.btn-blue .x-btn-glyph, .btn-blue .x-btn-inner {
+  color: #003F9A !important;
+}
+.btn-green {
+  background-color: #308e05 !important;
+  background-image: none !important;
+  border-color: #308e05 !important;
+}
+.btn-green .x-btn-glyph, .btn-green .x-btn-inner {
+  color: #ffffff !important;
+  background-color: #308e05 !important;
+}
+
+// field help text (under fields)
+.ux-form-fieldhelptext{
+  font-size: 9px;
+  font-style: italic;
+}
+
+// class for action columns
+.x-grid-center-icon {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  cursor: pointer;
+}
+
+.default-cursor {
+  cursor: default !important;
+}
+
+.icon-yellow-dot { background-image: url(images/yellow-dot.png) !important; }
+.icon-green-dot { background-image: url(images/green-dot.png) !important; }
+.icon-red-dot { background-image: url(images/red-dot.png) !important; }
+.icon-gray-dot { background-image: url(images/gray-dot.png) !important; }
+.icon-red-cross { background-image: url(images/red-cross.png) !important; }
+.icon-document { background-image: url(images/document.png) !important; }
+.icon-document-edit { background-image: url(images/document-edit.png) !important; }
+
+.icon-kml { background-image: url(images/kml.png) !important; }
+.icon-csv { background-image: url(images/csv.png) !important; }
+.icon-shape { background-image: url(images/shape.png) !important; }
+.icon-polygon { background-image: url(images/polygon.png) !important; }
+.icon-line { background-image: url(images/line.png) !important; }
+.icon-point { background-image: url(images/point.png) !important; }
+
+// Dataview
+.attachments-view .thumb{
+  background: #dddddd;
+  padding: 3px;
+  padding-bottom: 0;
+  padding-left: 3px;
+}
+
+.x-quirks .attachments-view .thumb {
+  padding-bottom: 3px;
+}
+
+.attachments-view .thumb img{
+  height: 62px;
+  width: 60px;
+}
+.attachments-view .thumb-wrap{
+  float: left;
+  margin: 4px;
+  margin-right: 10;
+  padding: 5px;
+}
+.attachments-view .thumb-wrap span {
+  display: block;
+  overflow: hidden;
+  text-align: center;
+  width: 60px; /* for ie to ensure that the text is centered */
+}
+
+.attachments-view .thumb-wrap span.x-editable {
+  font-size: 10px;
+  margin-top: 2px;
+  margin-left: 2px;
+}
+
+.attachments-view .x-item-over{
+  border:1px solid #dddddd;
+  background: #efefef url(images/over.gif) repeat-x left top;
+  padding: 4px;
+}
+
+.attachments-view .x-item-selected{
+  background: #eff5fb url(images/selected.gif) no-repeat right bottom;
+  border:1px solid #99bbe8;
+  padding: 4px;
+}
+.attachments-view .x-item-selected .thumb{
+  background:transparent;
+}
+
+
+// Leaflet
+.info {
+  padding: 6px 8px;
+  font: 14px/16px Arial, Helvetica, sans-serif;
+  background: white;
+  background: rgba(255,255,255,0.8);
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  border-radius: 5px;
+}
+.legend {
+  text-align: left;
+  line-height: 20px;
+  color: #555;
+  width: 150px;
+}
+.legend button {
+  width: 100%;
+  background-color: red;
+  color: white;
+  font-weight: bold;
+  border: 0px;
+  padding: 8px;
+  border-radius: 5px;
+}
+.legend button:hover {
+  background-color: white;
+  color: red;
+}
+.legend button:active {
+  background-color: red;
+  color: white;
+}
+.legend i {
+  width: 16px;
+  height: 16px;
+  margin-top: 2px;
+  float: left;
+  margin-right: 8px;
+  opacity: 0.7;
+  border-radius: 50%;
+  border: 1px solid #bbb;
+}

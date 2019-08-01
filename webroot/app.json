@@ -1,0 +1,9 @@
+{
+    "name": "SIO",
+
+    "requires": [
+        "ext-locale"
+    ],
+
+    "id": "f44a56a6-ae1e-4151-9e4d-027254a8c0e6"
+}
