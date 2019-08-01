@@ -18,7 +18,7 @@ Nel 2019 si è evoluto diventando un sistema concertativo tematico con facoltà 
 - Almeno un baselayer (Es: OpenStreetMap)
 - Tematismi WMS da esporre in mappa
 ## Installazione
-1. Scaricare la cartella del progetto e posizionarla nella document root del web server;
+1. Scaricare la cartella del progetto, posizionarla nella document root del web server e rinominarla in 'sicla';
 2. Restaurare il file dump.sql all'interno di un database vuoto;
 3. Se non è presente, creare un collegamento alla cartella temporanea del web server all'interno della document root;
 4. Assicurarsi che le cartelle 'attachments', 'Config', 'tmp', 'webroot' abbiano tutti i permessi necessari
