@@ -77,7 +77,7 @@ Nel 2019 si è evoluto diventando un sistema concertativo tematico con facoltà 
 - Tabella 'towns'
   - I record di entità 'Comune' NECESSITANO della popolazione del campo geometrico per il funzionamento dell'applicativo;
   - I record di entità 'Ente' NON devono avere il campo geometrico popolato;
-  - La proiezione geometrica del dato geometrico dei record aventi entità 'comune' deve corrispondere all'impostazione 'displayProj' del progetto.
+
 - Impostazioni progetto
   - La configurazione del server mail è MANDATORIA per il corretto funzionamento dell'applicativo;
   - L'upload path è auto-generato al salvataggio delle impostazioni;
