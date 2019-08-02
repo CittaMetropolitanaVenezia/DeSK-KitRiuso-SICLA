@@ -23,6 +23,16 @@ Ext.define('SIO.view.admin.system.Form', {
     },
     initComponent: function() {
         var me = this;
+	var projections = Ext.create('Ext.data.Store', {
+		fields: ['proj'],
+		data : [
+			{"proj":"3395"},
+			{"proj":"3857"},
+			{"proj":"4326"},
+			{"proj":"900913"},
+					
+		]
+	});	    
         Ext.apply(me, {
             tools: [
                 {
@@ -166,12 +176,20 @@ Ext.define('SIO.view.admin.system.Form', {
 							name: 'general.maxUserXtown'
 						},
 						{
-							xtype: 'textfield',
-							name: 'map.dataProj',
+							xtype: 'combobox',
 							fieldLabel: 'dataProj',
-							allowBlank: false,
-							readOnly: true,
-							anchor: '70%',
+							typeAhead: true,
+							triggerAction: 'all',
+							forceSelection: true,
+							msgTarget: 'under',
+							queryMode: 'local',
+							store: projections,
+							displayField: 'proj',
+							valueField: 'proj',
+							name: 'map.dataProj',
+							name: 'map.dataProj',				
+							allowBlank: false,						
+							anchor: '70%'
 						},
 						{
 							xtype: 'textfield',
