@@ -23,7 +23,7 @@ Nel 2019 si è evoluto diventando un sistema concertativo tematico con facoltà 
 3. Se non è presente, creare un collegamento alla cartella temporanea del web server all'interno della document root;
 4. Assicurarsi che le cartelle 'attachments', 'Config', 'tmp', 'webroot' abbiano tutti i permessi necessari
   - Linux:
-    Accedere alla shell e navigare fino alla cartella dell'applicativo, quindi eseguire qeusto comando:
+    Accedere alla shell e navigare fino alla cartella dell'applicativo, quindi eseguire questo comando:
     ```
     sudo chmod -R 777 [nome_cartella]
     ```
