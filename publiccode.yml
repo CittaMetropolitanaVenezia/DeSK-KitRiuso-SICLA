@@ -1,0 +1,79 @@
+# This repository adheres to the publiccode.yml standard by including this 
+# metadata file that makes public software easily discoverable.
+# More info at https://github.com/italia/publiccode.yml
+
+publiccodeYmlVersion: '0.2'
+name: SICLA
+applicationSuite: Progetto DeSK
+url: 'https://github.com/ProgettoDeSK/KitRiuso-SICLA'
+landingURL: 'https://github.com/ProgettoDeSK/KitRiuso-SICLA.git'
+releaseDate: '2019-08-05'
+softwareVersion: '1.0'
+developmentStatus: stable
+softwareType: standalone/web
+platforms:
+  - linux
+  - web
+logo: 'https://progettodesk.it/wp-content/uploads/2018/11/logo_header2.fw_.png'
+categories:
+  - data-collection
+  - data-analytics
+  - data-visualization
+  - collaboration
+  - geographic-information-systems
+  - knowledge-management
+maintenance:
+  type: contract
+  contacts:
+    - name: Luca Celeghin
+      email: informatica@cittametropolitana.ve.it
+      phone: 0412501953
+  contractors:
+    - name: Corvallis S.p.A.
+      website: www.corvallis.it
+      until: '2020-09-30'
+legal:
+  license: GPL-3.0-only
+  mainCopyrightOwner: Città metropolitana di Venezia
+  repoOwner: ProgettoDeSK
+intendedAudience:
+  countries:
+    - it
+localisation:
+  localisationReady: false
+  availableLanguages:
+    - it
+it:
+  riuso:
+    codiceIPA: p_ve
+  conforme:
+    misureMinimeSicurezza: true
+    gdpr: true
+    modelloInteroperabilita: true
+description:
+  it:
+    shortDescription: Sistema di concertazione territoriale
+    longDescription: >
+      S.I.C.L.A. (Sistema Concertativo Limiti Amministrativi) è un esempio di
+      strumento concertativo realizzato da 
+
+
+      Città metropolitana di Milano per supportare processi decisionali a opera
+      dei comuni appartenenti al territorio
+
+       di Città metropolitana di Milano.
+
+       A seguito di un accesso tramite credenziali, i comuni possono concertare i propri limiti generando osservazioni,
+
+       modifiche e segnalazioni che danno vita ad un processo di concertazione con i comuni limitrofi.
+
+       I partner hanno convenuto che l’evoluzione del sistema consenta di “Concertare” tematiche differenti 
+
+      selezionabili in base alle esigenze.  
+    localisedName: SICLA
+    genericName: SICLA
+    documentation: 'https://github.com/ProgettoDeSK/KitRiuso-SICLA/blob/master/README.md'
+    features:
+      - Sistema parametrico di concertazione territoriale
+    videos:
+      - 'https://progettodesk.it/formazione-sicla-evoluzione/'
