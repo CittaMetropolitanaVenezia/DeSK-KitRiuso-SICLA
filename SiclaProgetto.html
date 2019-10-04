@@ -1,0 +1,132 @@
+<p>&nbsp;</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </p>
+<table>
+<tbody>
+<tr>
+<td width="253">
+<p>&nbsp;</p>
+</td>
+<td width="267">
+<h1><strong>SICLA</strong></h1>
+<h1><strong>Guida alla creazione di un progetto</strong></h1>
+</td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;<br /> </p>
+<p><a name="_Toc81971775"></a><a name="_Toc77746299"></a><a name="_Toc465074998"></a><a name="_Toc461328694"></a>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<h1>&nbsp;</h1>
+<p>Sommario</p>
+<p><a href="#_Toc16066555">1 INTRODUZIONE. 3</a></p>
+<p><a href="#_Toc16066556">2 PRE-REQUISITI 3</a></p>
+<p><a href="#_Toc16066557">3 CREAZIONE DI UN PROGETTO.. 3</a></p>
+<p><a href="#_Toc16066558">3.1 Creare il nuovo progetto.. 3</a></p>
+<p><a href="#_Toc16066559">3.2 Configurare il nuovo progetto - Legenda.. 3</a></p>
+<p><a href="#_Toc16066560">3.3 Configurare il nuovo progetto.. 4</a></p>
+<p><a href="#_Toc16066561">3.3.1 Tabella BaseLayers. 4</a></p>
+<p><a href="#_Toc16066562">3.3.2 Tabella OverlayLayers. 5</a></p>
+<p><a href="#_Toc16066563">3.4 Finalizzare il nuovo progetto.. 5</a></p>
+<p>&nbsp;</p>
+<p><strong><br /> </strong></p>
+<h1><a name="_Toc15896602"></a>&nbsp;</h1>
+<h1><a name="_Toc16066555"></a>1 INTRODUZIONE</h1>
+<p>Questa guida seguir&agrave; la creazione di un progetto atto all&rsquo;inserimento di osservazioni riguardanti i confini comunali all&rsquo;interno del territorio della Citt&agrave; Metropolitana di Milano.</p>
+<p>&nbsp;</p>
+<h1><a name="_Toc16066556"></a>2 PRE-REQUISITI</h1>
+<ul>
+<li>Installazione di SICLA funzionante;</li>
+<li>Un base layer (mappa di sfondo), in questo caso OpenStreetMap;</li>
+<li>Un servizio WMS riguardante i limiti comunali del territorio;</li>
+<li>I dati geometrici delle citt&agrave; di Milano, inseriti nella tabella &lsquo;towns&rsquo; del db;</li>
+<li>L&rsquo;extent geografico in EPSG:4326 della zona desiderata, in questo caso Milano;</li>
+<li>Un server di posta gi&agrave; configurato, in questo caso ne useremo uno fittizio;</li>
+</ul>
+<p>&nbsp;</p>
+<h1><a name="_Toc16066557"></a>3 CREAZIONE DI UN PROGETTO</h1>
+<p>&nbsp;</p>
+<h2><a name="_Toc16066558"></a>3.1 Creare il nuovo progetto</h2>
+<p>Per creare il nuovo progetto, eseguire il login tramite un utente admin e, caricato un progetto a scelta, accedere al pannello di amministrazione. Navigare alla tabella dei progetti, quindi premere il pulsante &lsquo;+&rsquo;. Apparir&agrave; una nuova riga vuota in tabella, in questa fase si assegneranno nome e descrizione del progetto. Nel nostro caso avremo &lsquo;C.M. Milano&rsquo; come nome e &lsquo;Ridefinizione dei limiti comunali&rsquo; come descrizione.</p>
+<p>Una volta compilato i campi premere &lsquo;Salva&rsquo;.</p>
+<p>&nbsp;</p>
+<h2><a name="_Toc16066559"></a>3.2 Configurare il nuovo progetto - Legenda</h2>
+<p><strong>Titolo Applicazione</strong>: Titolo del Progetto, visualizzato accanto al nome utente nella schermata principale;</p>
+<p><strong>Data inizio concertazione</strong>/ <strong>Data fine concertazione</strong>: Periodo in cui &egrave; possibile inserire osservazioni;</p>
+<p><strong>Tema concertazione</strong>: Nel caso non si voglia concertare per limiti comunali, &egrave; possibile inserire un file shape contente i dati di aree pi&ugrave; grandi(come le Aree Omogenee), che andr&agrave; a modificare i risultati dei comuni/enti interessati in seguito all&rsquo;inserimento di una osservazione;</p>
+<p><strong>Numero massimo allegati</strong>: Numero massimo di allegati per osservazione;</p>
+<p><strong>Percorso upload</strong>: Impostato automaticamente al salvataggio, &egrave; il percorso dove vengono salvati gli allegati;</p>
+<p><strong>Numero massimo utenti</strong>: Numero massimo di utenti associati ad un ente/comune;</p>
+<p><strong>dataProj</strong>: Proiezione di leaflet, di default &egrave; 3857;</p>
+<p><strong>displayProj</strong>: Proiezione delle osservazioni, campo non variabile. Valore: 32632;</p>
+<p><strong>Disegna oltre i confini comunali</strong>: Se spuntato, permette agli utenti di inserire osservazioni al di fuori dei limiti comunali del comune a cui &egrave; associato;</p>
+<p><strong>drawBuffer(metri)</strong>: Distanza in metri oltre i confini comunali in cui &egrave; ancora possibile disegnare. Non ne viene tenuto conto se &lsquo;Disegna oltre i confini comunali&rsquo; &egrave; spuntato;</p>
+<p><strong>Tipo di geometrie: </strong>Se spuntato, &egrave; concesso inserire osservazioni di quel tipo geometrico;</p>
+<p><strong>Extent Geografico(xmin.ymin,xmax,ymax)</strong>: Coordinate geografiche dell&rsquo;extent della mappa, in Sistema di riferimento EPSG:4326;</p>
+<p><strong>Host SMTP: </strong>Host del server di posta;</p>
+<p><strong>Porta SMTP</strong>: Porta del server di posta;</p>
+<p><strong>Username SMTP</strong>: Username per accedere al server di posta;</p>
+<p><strong>Password SMTP</strong>: Password per accedere al server di posta;</p>
+<p><strong>Email mittente</strong>: Indirizzo e-mail da cui verranno inviate le varie e-mail;</p>
+<p><strong>Oggetto nuova osservazione</strong>: Oggetto delle e-mail all&rsquo;inserimento di una nuova osservazione;</p>
+<p><strong>Oggetto nuovo parere</strong>: Oggetto delle e-mail all&rsquo;inserimento di un nuovo parere;</p>
+<p><strong>Endpoint</strong>: Endpoint della mini-mappa;</p>
+<p><strong>Attribution</strong>: Attribuzione della mini-mappa;</p>
+<p><strong>Zoom Massimo(5-16)</strong>: Zoom massimo della mini-mappa;</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+<h2><a name="_Toc16066560"></a>3.3 Configurare il nuovo progetto</h2>
+<p>Una volta creato il progetto, esso ha bisogno di una configurazione.</p>
+<p>Per accedere alle impostazioni del progetto, premere l&rsquo;ingranaggio alla fine della riga del progetto stesso sulla tabella. Questa &egrave; la nostra configurazione:</p>
+<p><strong>Titolo Applicazione</strong>: C.M. Milano &ndash; Limiti Comunali</p>
+<p><strong>Data inizio concertazione</strong>: 01/08/2019</p>
+<p><strong>Data fine concertazione</strong>: 31/12/2019</p>
+<p><strong>Numero massimo allegati</strong>: 8</p>
+<p><strong>Percorso upload</strong>: Impostato automaticamente al salvataggio</p>
+<p><strong>Numero massimo utenti</strong>: 3</p>
+<p><strong>dataProj</strong>: 3857</p>
+<p><strong>displayProj</strong>: 32632</p>
+<p><strong>Disegna oltre i confini comunali</strong>: O</p>
+<p><strong>drawBuffer(metri)</strong>: 100&nbsp;&nbsp;</p>
+<p><strong>Tipo di geometrie:</strong></p>
+<p><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Punto</strong>: X</p>
+<p><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Linea</strong>: X</p>
+<p><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Poligono</strong>: X</p>
+<p><strong>x min</strong>: 45.0066689276312</p>
+<p><strong>y min</strong>: 8.48941813299552</p>
+<p><strong>x max</strong>: 45.8969636033166</p>
+<p><strong>y max</strong>: 9.7682184955477</p>
+<p><strong>Host SMTP: </strong>esempio.mail.com</p>
+<p><strong>Porta SMTP</strong>: 25</p>
+<p><strong>Username SMTP</strong>: <a href="mailto:cm-mi@esempio.mi.com">cm-mi@esempio.mi.com</a></p>
+<p><strong>Password SMTP</strong>: password</p>
+<p><strong>Email mittente</strong>: <a href="mailto:admin@esempio.vi.com">admin@esempio.vi.com</a></p>
+<p><strong>Oggetto nuova osservazione</strong>: C.M. Milano &ndash; Limiti - Nuova Osservazione</p>
+<p><strong>Oggetto nuovo parere</strong>: C.M. Milano &ndash; Limiti &ndash; Nuovo Parere</p>
+<p><strong>Endpoint</strong>: https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png</p>
+<p><strong>Attribution</strong>: &lt;a href=https://www.openstreetmap.org/copyright&gt;OpenStreetMap&lt;/a&gt; contributors</p>
+<p><strong>Zoom Massimo(5-16)</strong>: 16</p>
+<h3><a name="_Toc16066561"></a>3.3.1 Tabella BaseLayers</h3>
+<p>Premere il pulsante &lsquo;+&rsquo; per aggiungere un nuovo base layer.</p>
+<p><strong>Tipo</strong>: osm</p>
+<p><strong>Titolo</strong>: OpenStreetMap</p>
+<p><strong>Endpoint</strong>: https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png</p>
+<p><strong>Attribution</strong>: &lt;a href="https://www.openstreetmap.org/copyright"&gt;OpenStreetMap&lt;/a&gt; contributors</p>
+<p><strong>Zoom(1-18)</strong>: 18</p>
+<h3><a name="_Toc16066562"></a>3.3.2 Tabella OverlayLayers</h3>
+<p>Premere il pulsante &lsquo;+&rsquo; per aggiungere un nuovo overlay layer.</p>
+<p><strong>Codice</strong>: Limiti_comunali</p>
+<p><strong>Titolo</strong>: Limiti comunali</p>
+<p><strong>Endpoint</strong>: http://servizi.informcity.it/cgi-bin/mapserv?MAP=/home/gis/web/tests/sioweb/wms.map&amp;mode=map</p>
+<p><strong>Layer</strong>: comuni</p>
+<p><strong>Formato</strong>: image/png</p>
+<p><strong>Trasparenza</strong>: 1</p>
+<p><strong>Attribution</strong>: Regione Lombardia</p>
+<p><strong>Acceso</strong>: X</p>
+<p>&nbsp;</p>
+<h2><a name="_Toc16066563"></a>3.4 Finalizzare il nuovo progetto</h2>
+<p>&nbsp;</p>
+<p>Una volta inserite tutte le impostazioni, premere il pulsante &lsquo;V&rsquo; in alto a destra per salvare.</p>
+<p>Il progetto diventer&agrave; automaticamente attivo.</p>
+<p>L&rsquo;ultimo step &egrave; quello di associare utenti e enti/comuni al progetto. Questo &egrave; possibile navigando nelle loro rispettive schede del pannello di amministrazione e premendo la graffetta a destra della riga dell&rsquo;utente/ente che si vuole associare. Solo gli utenti associati al progetto potranno caricarlo.</p>
+<p>&nbsp;</p>
+<h1>&nbsp;</h1>

@@ -1,0 +1,166 @@
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </p>
+<table>
+<tbody>
+<tr>
+<td width="253">
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><br /> </p>
+</td>
+<td width="267">
+<p><strong>&nbsp;</strong></p>
+<p><strong>&nbsp;</strong></p>
+<h1><strong>SICLA</strong></h1>
+<h1><strong>Sistema Informativo Concertativo</strong></h1>
+<p>&nbsp;</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+<p>&nbsp;<br /> </p>
+<p><a name="_Toc81971775"></a><a name="_Toc77746299"></a><a name="_Toc465074998"></a><a name="_Toc461328694"></a>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<h1>&nbsp;</h1>
+<p>Sommario</p>
+<p><a href="#_Toc15900372">1 INTRODUZIONE. 3</a></p>
+<p><a href="#_Toc15900373">2 TERMINOLOGIA E DEFINIZIONI 3</a></p>
+<p><a href="#_Toc15900374">3 PREREQUISITI 3</a></p>
+<p><a href="#_Toc15900375">3.1 Infrastruttura. 3</a></p>
+<p><a href="#_Toc15900376">3.2 Kit di riuso.. 3</a></p>
+<p><a href="#_Toc15900377">3.3 Pre-requisiti, vincoli e criticit&agrave;.. 3</a></p>
+<p><a href="#_Toc15900378">4 CONFIGURAZIONE. 4</a></p>
+<p><a href="#_Toc15900379">4.1 Configurazione del sistema.. 4</a></p>
+<p><a href="#_Toc15900380">4.2 Configurazione elementi grafici 4</a></p>
+<p><a href="#_Toc15900381">5 Installazione. 4</a></p>
+<p><a href="#_Toc15900382">6 Creazione di un progetto.. 5</a></p>
+<p>&nbsp;</p>
+<p><strong><br /> </strong></p>
+<h1><a name="_Toc15900372"></a>1 INTRODUZIONE</h1>
+<p>&nbsp;</p>
+<p>Il presente documento vuole fornire le informazioni necessarie per l&rsquo;installazione la configurazione e la parametrizzazione dell&rsquo;applicativo SICLA &ndash; Sistema Informativo Concertativo.</p>
+<p>Sicla &egrave; un sistema concertativo nato per la concertazione di limiti territoriali tra pi&ugrave; enti all'interno di una determinata area.</p>
+<p>Nel 2019 si &egrave; evoluto diventando un sistema concertativo tematico con facolt&agrave; di parametrizzazione.</p>
+<h1><a name="_Toc15900373"></a>2 TERMINOLOGIA E DEFINIZIONI</h1>
+<ul>
+<li>WMS: Per&nbsp;Web Map Service(WMS) si intende una specifica tecnica definita dall&rsquo;OGC, che produce dinamicamente mappe di dati spazialmente riferiti a partire da informazioni geografiche. Questo standard internazionale definisce una "mappa" come rappresentazione di informazioni geografiche restituendo un'immagine digitale idonea ad essere visualizzata su&nbsp;browser web.</li>
+</ul>
+<h1><a name="_Toc15900374"></a>3 PREREQUISITI</h1>
+<p>&nbsp;</p>
+<h2><a name="_Toc15900375"></a>3.1 Infrastruttura</h2>
+<p>Struttura mono-server con Ubuntu avente all&rsquo;interno:</p>
+<ul>
+<li>Apache 2.x</li>
+<li>Database Postgres 9.x(consigliata 9.5) con codifica UTF-8 e Postgis 2.x</li>
+<li>Server di posta</li>
+</ul>
+<h2><a name="_Toc15900376"></a>3.2 Kit di riuso</h2>
+<p>&nbsp;</p>
+<p>Cartelle:</p>
+<ul>
+<li>Attachments: cartella dove vengono salvati tutti gli allegati;</li>
+<li>Config: cartella contenente impostazioni generali, di connessione e specifiche dei progetti;</li>
+<li>Controller: cartella che contiene tutti i Controller lato back-end;</li>
+<li>Model: cartella che contiene tutti i Model lato back-end;</li>
+<li>View: cartella che contiene tutte le View lato back-end;</li>
+<li>Webroot: cartella contenente il front-end e tutti i file accessibili.</li>
+</ul>
+<p>Database:</p>
+<ul>
+<li>File dump.sql contenente dati di prova.</li>
+</ul>
+<p>&nbsp;</p>
+<p>Elementi grafici:</p>
+<ul>
+<li>Webroot/resources/images: tutte le icone riguardanti i pulsanti dell&rsquo;applicativo;</li>
+<li>Webroot/resources/login:
+<ul>
+<li>png: 483x135px, immagine della schermata di login</li>
+<li>png: 850x135px, immagine della schermata di trattamento dati</li>
+</ul>
+</li>
+<li>Webroot/resources/logos:
+<ul>
+<li>jpg: 1800x237px, immagine di background dell&rsquo;header dell&rsquo;applicativo</li>
+<li>Header-left.png: 545x70px, header in alto a sinistra</li>
+<li>Header-right.png: 478x70px, header in alto a destra</li>
+</ul>
+</li>
+</ul>
+<p>&nbsp;</p>
+<h2><a name="_Toc15900377"></a>3.3 Pre-requisiti, vincoli e criticit&agrave;</h2>
+<p>Webserver:</p>
+<ul>
+<li>PHP 5.6.x</li>
+<li>Almeno un base layer (come OpenStreetMap)</li>
+<li>Tematismi WMS da esporre in mappa</li>
+<li>Estensioni intl, mbstring, libxml, pdo_pgsql, zip, zlib installate</li>
+</ul>
+<p>Cartelle aventi tutti i permessi:</p>
+<ul>
+<li>Attachments</li>
+<li>Config</li>
+<li>Tmp</li>
+<li>Webroot</li>
+</ul>
+<p>&nbsp;</p>
+<h1><a name="_Toc15900378"></a>4 CONFIGURAZIONE</h1>
+<p>&nbsp;</p>
+<h2><a name="_Toc15900379"></a>4.1 Configurazione del sistema</h2>
+<ol>
+<li>Scaricare la cartella del progetto, posizionarla nella document root del web server;</li>
+<li>Restaurare il file dump.sql all'interno di un database vuoto;</li>
+<li>Popolare la tabella &lsquo;towns&rsquo; con i dati delle citt&agrave; desiderate, senza eliminare quelle gi&agrave; presenti;</li>
+<li>Se non &egrave; presente, creare un collegamento alla cartella temporanea del web server all'interno della document root;</li>
+<li>Assicurarsi che le cartelle 'attachments', 'Config', 'tmp', 'webroot' e sottocartelle abbiano tutti i permessi necessari;</li>
+<li>Aprire il file <em>database.php</em> all&rsquo;interno della cartella Config e configurare la connessione a DB.</li>
+</ol>
+<h2><a name="_Toc15900380"></a>4.2 Configurazione elementi grafici</h2>
+<p>&nbsp;&nbsp; Seguire il path delle immagini indicato nella sezione 3.2 e cambiare le immagini di default con quelle desiderate, prestando attenzione a mantenere le stesse dimensioni delle precedenti.&nbsp;&nbsp;&nbsp;&nbsp;</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+<h1><a name="_Toc15900381"></a>5 Installazione</h1>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<ol>
+<li>Una volta configurato il sistema, aprire il file&nbsp;<em>php</em>all'interno della cartella Config e cambiare il valore del debug da 0 a 2:
+<ol>
+<li>Configure::write('debug', 0) -&gt;&nbsp; Configure::write('debug', 2);</li>
+</ol>
+</li>
+<li>Accedere all&rsquo;applicativo dall&rsquo;url del server utilizzato ed eseguire il primo login:
+<ol>
+<li>Username: sicla</li>
+<li>Password: sicla2019;</li>
+</ol>
+</li>
+<li>Aprire nuovamente il file <em>php</em> e cambiare il valore del debug da 2 a 0;</li>
+</ol>
+<p>&nbsp;</p>
+<ol start="4">
+<li>Aggiornare la pagina, effettuare il login, selezionare il progetto di esempio e caricarlo;</li>
+<li>Dopo preso mano con l'applicativo, accedere al pannello di amministrazione dei progetti e creare il primo vero progetto. Un progetto per essere funzionale ha bisogno di tutti i campi obbligatori delle sue impostazioni, oltre ad almeno un baselayer inserito. Si pu&ograve; accedere alle impostazioni del progetto appena creato tramite l'apposito pulsante sulla griglia dei progetti;</li>
+<li>Creare ed associare i vari enti caricati/creati e l'utente sicla al nuovo progetto;</li>
+<li>Eseguire il login con lo stesso utente al nuovo progetto, caricarlo e, se desiderato, cancellare il progetto di esempio;</li>
+<li>Eliminare i dati di esempio all'interno della tabella 'towns'.</li>
+</ol>
+<h1><a name="_Toc15900382"></a>6 Creazione di un progetto</h1>
+<ol>
+<li>Accedere alla griglia di amministrazione dei progetti;</li>
+<li>Premere il tasto &lsquo;+&rsquo;, assegnare un nome e una descrizione e salvarlo;</li>
+<li>Accedere alle impostazioni del progetto tramite il pulsante &lsquo;ingranaggio&rsquo; sulla riga del progetto</li>
+<li>Compilare ogni campo presente (Il percorso upload verr&agrave; compilato automaticamente);</li>
+<li>Inserire almeno un base layer(Es. OpenStreetMap) e salvare le impostazioni</li>
+</ol>
+<p>(il progetto diventer&agrave; attivo);</p>
+<ol start="6">
+<li>Associare utenti e enti/comuni desiderati al progetto creato;</li>
+</ol>
+<p>Per utilizzare il nuovo progetto baster&agrave; eseguire il login con uno degli utenti associati ad esso e caricarlo.</p>
+<p>L&rsquo;inserimento di un tema di concertazione nelle impostazioni andr&agrave; ad influenzare l&rsquo;elenco dei comuni/enti da coinvolgere una volta disegnata l&rsquo;osservazione.</p>
+<p><strong>Per maggiori informazioni riguardo alla creazione di un progetto, visualizzare la guida apposita.</strong></p>
+<p>&nbsp;</p>
