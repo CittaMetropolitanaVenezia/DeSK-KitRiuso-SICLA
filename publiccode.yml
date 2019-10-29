@@ -14,7 +14,7 @@ softwareType: standalone/web
 platforms:
   - linux
   - web
-logo: 'https://progettodesk.it/wp-content/uploads/2018/11/logo_header2.fw_.png'
+logo: 'logo_header2.fw_.png'
 categories:
   - data-collection
   - data-analytics
