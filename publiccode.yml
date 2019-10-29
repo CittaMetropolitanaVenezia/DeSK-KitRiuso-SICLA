@@ -5,8 +5,8 @@
 publiccodeYmlVersion: '0.2'
 name: SICLA
 applicationSuite: Progetto DeSK
-url: 'https://github.com/ProgettoDeSK/KitRiuso-SICLA'
-landingURL: 'https://github.com/ProgettoDeSK/KitRiuso-SICLA.git'
+url: 'https://github.com/CittaMetropolitanaVenezia/DeSK-KitRiuso-SICLA'
+landingURL: 'https://github.com/CittaMetropolitanaVenezia/DeSK-KitRiuso-SICLA.git'
 releaseDate: '2019-08-05'
 softwareVersion: '1.0'
 developmentStatus: stable
@@ -35,7 +35,7 @@ maintenance:
 legal:
   license: GPL-3.0-only
   mainCopyrightOwner: Città metropolitana di Venezia
-  repoOwner: ProgettoDeSK
+  repoOwner: CittaMetropolitanaVenezia
 intendedAudience:
   countries:
     - it
@@ -55,6 +55,13 @@ description:
   it:
     shortDescription: Sistema di concertazione territoriale
     longDescription: >
+     Applicativo che fa parte del progetto DeSK (DEcision support System and Knowledge territoriale)  
+     al quale hanno collaborato città Metropolitana di Milano, Città Metropolitana di Genova, 
+     Provincia di Taranto e Città Metropolitana di Venezia con il supporto tecnico
+     dell'azienda Corvallis S.p.A. Il progetto nasce come riuso di quanto sviluppato 
+     da Città Metropolitana di Milano in precedente esperienza. 
+     Consta di un insieme di applicativi finalizzati alla concertazione e all'arricchimento
+     dell'informazione e della conoscenza territoriale.
       S.I.C.L.A. (Sistema Concertativo Limiti Amministrativi) è un esempio di
       strumento concertativo realizzato da 
 
@@ -76,6 +83,6 @@ description:
       [questo](https://progettodesk.it/formazione-sicla-evoluzione/) video.
     localisedName: SICLA
     genericName: SICLA
-    documentation: 'https://github.com/ProgettoDeSK/KitRiuso-SICLA/blob/master/README.md'
+    documentation: 'https://github.com/CittaMetropolitanaVenezia/DeSK-KitRiuso-SICLA/blob/master/README.md'
     features:
       - Sistema parametrico di concertazione territoriale
