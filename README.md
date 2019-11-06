@@ -1,6 +1,8 @@
-## SICLA - SIstema Concertativo
+## SICLA - SIstema Concertativo Limiti Amministrativi
 Sicla è un sistema concertativo nato per la concertazione di limiti territoriali tra più enti all'interno di una determinata area.
-Nel 2019 si è evoluto diventando un sistema concertativo tematico con facoltà di parametrizzazione.
+Nel 2019 nell'aambito del progetto DeSK, il sistema è stato evoluto diventando un applicazione per la concertazione su  tematiche con facoltà di parametrizzazione. E' un esempio di strumento concertativo realizzato da Città metropolitana di Milano per supportare processi decisionali a opera dei comuni appartenenti al territorio.
+Il sistema è stato reingegnerizzato nell'ambito del progetto DeSK con l'obiettivo di poter concertare differenti tematiche  geografiche tra enti, rendendolo in tal modo versatile nelle diversi ambiti di impiego. A seguito di un accesso tramite credenziali, i comuni possono concertare la tematica di discussione (progetto) generando osservazioni, modifiche e segnalazioni integrate con contenuti che danno vita ad un processo di concertazione con i comuni limitrofi.
+
 ## Tech/framework utilizzati
 - [Ext JS](https://www.sencha.com/products/extjs/)
 - [CakePHP](https://cakephp.org/)
